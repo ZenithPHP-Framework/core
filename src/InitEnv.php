@@ -1,7 +1,7 @@
 <?php
 
 // Load .env file
-namespace App;
+namespace Dasunnethsara\ZenithphpCore;
 
 require_once "../vendor/autoload.php";
 

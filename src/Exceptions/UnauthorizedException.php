@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Dasunnethsara\ZenithphpCore\Exceptions;
 
 class UnauthorizedException extends \Exception
 {

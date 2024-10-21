@@ -1,10 +1,10 @@
 <?php
 
-namespace Controller;
+namespace Dasunnethsara\ZenithphpCore\Controller;
 
 use PDO;
 
-abstract class Controller
+abstract class BaseController
 {
     protected PDO $pdo;
 
