@@ -1,0 +1,15 @@
+{
+    "name": "dasunnethsara/zenithphp-core",
+    "autoload": {
+        "psr-4": {
+            "Dasunnethsara\\ZenithphpCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dasun",
+            "email": "techsaralk.pro@gmail.com"
+        }
+    ],
+    "require": {}
+}
