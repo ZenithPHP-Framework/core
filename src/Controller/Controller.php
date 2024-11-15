@@ -36,7 +36,7 @@ abstract class Controller
      */
     protected function view(string $filename = '', array $data = []): void
     {
-        $baseDir = dirname(__DIR__, 3);
+        $baseDir = dirname(__DIR__, 5);
 
         // Extract variables from the data array
         extract($data);
@@ -92,5 +92,4 @@ abstract class Controller
         $final = ob_get_clean();
         echo $final;
     }
-
 }
