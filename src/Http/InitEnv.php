@@ -1,17 +1,17 @@
 <?php
 
-// InitEnv.php
-
 namespace ZenithPHP\Core\Http;
 
 use Dotenv\Dotenv;
 
 class InitEnv
 {
-    public static function load(): void
+    public static function load(string $projectRoot = null): void
     {
-        // This loads the .env file located in the current directory (__DIR__)
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/../../../');
+        // If no root path is provided, use the default assumption
+        $projectRoot = $projectRoot ?? dirname(__DIR__, 4);
+
+        $dotenv = Dotenv::createImmutable($projectRoot);
         $dotenv->load();
 
         // DB info using $_ENV
