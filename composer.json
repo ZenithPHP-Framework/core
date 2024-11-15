@@ -1,19 +1,23 @@
 {
     "name": "dasunnethsara/zenithphp-core",
-    "autoload": {
-        "psr-4": {
-            "Dasunnethsara\\ZenithphpCore\\": "src/"
-        }
-    },
+    "description": "The core of the ZenithPHP framework, providing essential features like routing, controllers, middleware, database migrations, and more.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Dasun",
+            "name": "Dasun Nethsara",
             "email": "techsaralk.pro@gmail.com"
         }
     ],
     "require": {
+        "php": ">=8.0",
         "vlucas/phpdotenv": "^5.6",
         "ext-pdo": "*",
         "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZenithPHP\\Core\\": "src/"
+        }
     }
 }
